@@ -1,0 +1,13 @@
+{
+  "name": "Moodle Color Picker",
+  "description": "Chrome extension made for manually picking your huji-moodle color",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "logo.png"
+  }
+}
