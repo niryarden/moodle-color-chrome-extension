@@ -3,20 +3,28 @@ span {
     color: black;
 }
 
+#wrapper {
+    width: 200px;
+}
+
 #header-wrapper {
     display: flex;
     justify-content: center;
+
 }
 
 #colors-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 5px;
 }
 
 button {
     height: 30px;
     width: 30px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
 #red {
