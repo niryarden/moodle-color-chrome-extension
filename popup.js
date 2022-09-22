@@ -9,3 +9,4 @@ const onClick = color => {
 red.addEventListener("click", onClick("red"));
 green.addEventListener("click", onClick("green"));
 blue.addEventListener("click", onClick("blue"));
+cancel.addEventListener("click", onClick(null));

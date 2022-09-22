@@ -7,10 +7,9 @@ span {
     width: 200px;
 }
 
-#header-wrapper {
+#header-wrapper, #footer-wrapper {
     display: flex;
     justify-content: center;
-
 }
 
 #colors-wrapper {
@@ -25,6 +24,14 @@ button {
     width: 30px;
     margin: 0 5px;
     cursor: pointer;
+}
+
+#cancel {
+    cursor: pointer;
+    border: 1px solid black;
+    font-size: 13px;
+    color: black;
+    padding: 3px;
 }
 
 #red {
