@@ -34,14 +34,14 @@ button {
     padding: 3px;
 }
 
-#red {
-    background-color: red;
+#color-0 {
+    background-color: #ffb8b8;
 }
 
-#green {
-    background-color: green;
+#color-1 {
+    background-color: #b8ffdb;
 }
 
-#blue {
-    background-color: blue;
+#color-2 {
+    background-color: #85ffff;
 }
