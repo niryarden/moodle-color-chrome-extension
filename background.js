@@ -1,36 +1,42 @@
+const YEAR_PLACEHOLDER = "YEAR_PLACEHOLDER";
+
 const primaryClasses = [
-  ".year21 #page-header div.d-flex",
-  ".year21 #frame-column, .year21 .login_div3"
+  `.year${YEAR_PLACEHOLDER} #page-header div.d-flex`,
+  `.year${YEAR_PLACEHOLDER} #frame-column, .year${YEAR_PLACEHOLDER} .login_div3`
 ];
-const joinedPrimaryClasses = primaryClasses.join(", ");
 
 const secondaryClasses = [
-  ".year21 .block, .year21 .card-body.p-3, .year21 .card-title.d-inline",
-  ".year21",
+  `.year${YEAR_PLACEHOLDER} .block, .year${YEAR_PLACEHOLDER} .card-body.p-3, .year${YEAR_PLACEHOLDER} .card-title.d-inline`,
+  `.year${YEAR_PLACEHOLDER}`,
 ];
-const joinedSecondaryClasses = secondaryClasses.join(", ");
 
 const removeBorderClasses = [
   "#page-header div.d-flex",
   "#page-header div.flex-wrap"
 ];
-const joinedRemoveBorderClasses = removeBorderClasses.join(", ");
 
-const getCss = colorItem => {
+const getJoinedClasses = (classes, year) => {
+  const withYear = classes.map(classBefore => {
+    return classBefore.replaceAll(YEAR_PLACEHOLDER, year)
+  })
+  return withYear.join(", ");
+}
+
+const getCss = (colorItem, year) => {
   const primaryCss = `
-    ${joinedPrimaryClasses} {
+    ${getJoinedClasses(primaryClasses, year)} {
       background-color: ${colorItem.primary} !important;
       background: ${colorItem.primary} !important;
     } 
   `
   const secondaryCss = `
-    ${joinedSecondaryClasses} {
+    ${getJoinedClasses(secondaryClasses, year)} {
       background-color: ${colorItem.secondary} !important;
     }
   `
 
   const moreCss = `
-    ${joinedRemoveBorderClasses} {
+    ${getJoinedClasses(removeBorderClasses, year)} {
       border: none !important;
     }
   `
@@ -38,9 +44,16 @@ const getCss = colorItem => {
   return primaryCss + secondaryCss + moreCss;
 }
 
+const getYear = tab => {
+  const url = tab.url;
+  const startsWithYear = url.replace("https://moodle2.cs.huji.ac.il/nu", "");
+  return startsWithYear.slice(0, 2);
+}
+
 const changeColor = async colorItem => {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-  const css = getCss(colorItem);
+  const year = getYear(tab);
+  const css = getCss(colorItem, year);
   chrome.scripting.insertCSS({
     target: { tabId: tab.id },
     css: css
