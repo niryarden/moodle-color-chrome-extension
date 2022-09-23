@@ -10,9 +10,16 @@ span {
 #header-wrapper, #footer-wrapper {
     display: flex;
     justify-content: center;
+    margin: 5px 0;
 }
 
 #colors-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colors-row {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -44,4 +51,72 @@ button {
 
 #color-2 {
     background-color: #85ffff;
+}
+
+#color-3 {
+    background-color: white;
+}
+
+#color-4 {
+    background-color: white;
+}
+
+#color-5 {
+    background-color: white;
+}
+
+#color-6 {
+    background-color: white;
+}
+
+#color-7 {
+    background-color: white;
+}
+
+#color-8 {
+    background-color: white;
+}
+
+#color-9 {
+    background-color: white;
+}
+
+#color-10 {
+    background-color: white;
+}
+
+#color-11 {
+    background-color: white;
+}
+
+#color-12 {
+    background-color: white;
+}
+
+#color-13 {
+    background-color: white;
+}
+
+#color-14 {
+    background-color: white;
+}
+
+#color-15 {
+    background-color: white;
+}
+
+#color-16 {
+    background-color: white;
+}
+
+#color-17 {
+    background-color: white;
+}
+
+#color-18 {
+    background-color: white;
+}
+
+#color-19 {
+    background-color: white;
 }
