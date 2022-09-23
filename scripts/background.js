@@ -1,18 +1,25 @@
 const YEAR_PLACEHOLDER = "YEAR_PLACEHOLDER";
 
 const primaryClasses = [
-  `.year${YEAR_PLACEHOLDER} #page-header div.d-flex`,
-  `.year${YEAR_PLACEHOLDER} #frame-column, .year${YEAR_PLACEHOLDER} .login_div3`
+  "#page-header .card"
 ];
 
 const secondaryClasses = [
-  `.year${YEAR_PLACEHOLDER} .block, .year${YEAR_PLACEHOLDER} .card-body.p-3, .year${YEAR_PLACEHOLDER} .card-title.d-inline`,
-  `.year${YEAR_PLACEHOLDER}`,
+  `.year${YEAR_PLACEHOLDER} .login_div3`,
+  `.year${YEAR_PLACEHOLDER} #frame-column`
+];
+
+const tertiaryClasses = [
+  `.year${YEAR_PLACEHOLDER} .card-body.p-3`,
 ];
 
 const removeBorderClasses = [
   "#page-header div.d-flex",
   "#page-header div.flex-wrap"
+];
+
+const removeBackgroundClasses = [
+  `.year${YEAR_PLACEHOLDER} #page-header div.d-flex`
 ];
 
 const getJoinedClasses = (classes, year) => {
@@ -26,7 +33,6 @@ const getCss = (colorItem, year) => {
   const primaryCss = `
     ${getJoinedClasses(primaryClasses, year)} {
       background-color: ${colorItem.primary} !important;
-      background: ${colorItem.primary} !important;
     } 
   `
   const secondaryCss = `
@@ -35,13 +41,22 @@ const getCss = (colorItem, year) => {
     }
   `
 
+  const tertiaryCss = `
+    ${getJoinedClasses(tertiaryClasses, year)} {
+      background-color: ${colorItem.tertiary} !important;
+    }
+  `
+
   const moreCss = `
     ${getJoinedClasses(removeBorderClasses, year)} {
       border: none !important;
     }
+    ${getJoinedClasses(removeBackgroundClasses, year)} {
+      background: none !important;
+    }
   `
 
-  return primaryCss + secondaryCss + moreCss;
+  return primaryCss + secondaryCss + tertiaryCss + moreCss;
 }
 
 const getYear = tab => {
