@@ -1,122 +1,122 @@
 const COLORS = [
   {
     id: 'color-0',
-    primary: '#96C1A9',
-    secondary: '#B7CFB7',
-    tertiary: '#D4EBD3'
+    primary: '#91C4C3',
+    secondary: '#A5D8D8',
+    tertiary: '#C8F9F9'
   },
   {
     id: 'color-1',
-    primary: '#b8ffdb',
-    secondary: '#ebfff5',
-    tertiary: 'white'
+    primary: '#A9D59C',
+    secondary: '#C6F3BC',
+    tertiary: '#DAF7D3'
   },
   {
     id: 'color-2',
-    primary: '#85ffff',
-    secondary: '#d1ffff',
-    tertiary: 'white'
+    primary: '#F1D796',
+    secondary: '#FFEBB9',
+    tertiary: '#FFF3D8'
   },
   {
     id: 'color-3',
-    primary: '#dbb8ff',
-    secondary: '#e8d1ff',
-    tertiary: 'white'
+    primary: '#ED9E9F',
+    secondary: '#FFB2B2',
+    tertiary: '#FEDDDD'
   },
   {
     id: 'color-4',
-    primary: '#676767',
-    secondary: '#a6a6a6',
+    primary: 'white',
+    secondary: 'white',
     tertiary: 'white'
   },
   {
     id: 'color-5',
-    primary: '#fffcb7',
-    secondary: '#fffeea',
+    primary: 'white',
+    secondary: 'white',
     tertiary: 'white'
   },
   {
     id: 'color-6',
-    primary: '#0b903f',
-    secondary: '#4ea96b',
+    primary: 'white',
+    secondary: 'white',
     tertiary: 'white'
   },
   {
     id: 'color-7',
-    primary: '#d86289',
-    secondary: '#e081a1',
+    primary: 'white',
+    secondary: 'white',
     tertiary: 'white'
   },
   {
     id: 'color-8',
-    primary: '#ffc51a',
-    secondary: '#ffd24d',
-    tertiary: 'white'
+    primary: '#A2654D',
+    secondary: '#E7D3CB',
+    tertiary: '#FBF5E9'
   },
   {
     id: 'color-9',
-    primary: '#c0ff00',
-    secondary: '#e0ff80',
-    tertiary: 'white'
+    primary: '#DA5B48',
+    secondary: '#EDDAA7',
+    tertiary: '#F8F0DB'
   },
   {
     id: 'color-10',
-    primary: '#ff794d',
-    secondary: '#ff9f80',
-    tertiary: 'white'
+    primary: '#5C695F',
+    secondary: '#D8C7B7',
+    tertiary: '#FBF5E9'
   },
   {
     id: 'color-11',
-    primary: '#ff4d4d',
-    secondary: '#ff6666',
-    tertiary: 'white'
+    primary: '#083431',
+    secondary: '#C9C7C0',
+    tertiary: '#FBF5E9'
   },
   {
     id: 'color-12',
-    primary: '#ffff00',
-    secondary: '#ffff9a',
-    tertiary: 'white'
+    primary: '#453D3A',
+    secondary: '#9A9590',
+    tertiary: '#D1CCC8'
   },
   {
     id: 'color-13',
-    primary: '#4da6ff',
-    secondary: '#9accff',
-    tertiary: 'white'
+    primary: '#887A88',
+    secondary: '#A9A6A9',
+    tertiary: '#DCDCDC'
   },
   {
     id: 'color-14',
-    primary: '#008080',
-    secondary: '#00b3b3',
-    tertiary: 'white'
+    primary: '#A1A1AC',
+    secondary: '#C2C2CD',
+    tertiary: '#DFDFEB'
   },
   {
     id: 'color-15',
-    primary: '#cb4154',
-    secondary: '#d05566',
-    tertiary: 'white'
+    primary: '#ABABAB',
+    secondary: '#C4C4C4',
+    tertiary: '#EAEAEA'
   },
   {
     id: 'color-16',
-    primary: '#b37700',
-    secondary: '#e69900',
-    tertiary: 'white'
+    primary: '#797979',
+    secondary: '#4E4E4E',
+    tertiary: '#393939'
   },
   {
     id: 'color-17',
-    primary: '#99cccc',
-    secondary: '#bbdddd',
-    tertiary: 'white'
+    primary: '#3C2D69',
+    secondary: '#273455',
+    tertiary: '#1A2038'
   },
   {
     id: 'color-18',
-    primary: '#915c83',
-    secondary: '#a9779c',
-    tertiary: 'white'
+    primary: '#4B564D',
+    secondary: '#33403B',
+    tertiary: '#1B2122'
   },
   {
     id: 'color-19',
-    primary: '#8db600',
-    secondary: '#a1d000',
+    primary: 'white',
+    secondary: 'white',
     tertiary: 'white'
   },
 ];
@@ -132,4 +132,4 @@ const onClick = colorItem => {
 COLORS.forEach(colorItem => {
   document.getElementById(colorItem.id).addEventListener("click", onClick(colorItem));
 })
-cancel.addEventListener("click", onClick(null));
+reset.addEventListener("click", onClick(null));

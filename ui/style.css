@@ -1,5 +1,6 @@
 span {
     font-size: 16px;
+    text-decoration: underline;
     color: black;
 }
 
@@ -17,6 +18,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .colors-row {
@@ -31,92 +33,104 @@ button {
     width: 30px;
     margin: 0 5px;
     cursor: pointer;
+    border: none;
 }
 
-#cancel {
+button:hover {
+    border: 1px solid black;
+    opacity: 0.5;
+}
+
+#reset {
     cursor: pointer;
     border: 1px solid black;
     font-size: 13px;
+    border-radius: 5px;
     color: black;
     padding: 3px;
+    background-color: #EAEAEA;
+}
+
+#reset:hover {
+    background-color: #ABABAB;
 }
 
 #color-0 {
-    background-color: #B7CFB7;
+    background-color: #91C4C3;
 }
 
 #color-1 {
-    background-color: #b8ffdb;
+    background-color: #A9D59C;
 }
 
 #color-2 {
-    background-color: #85ffff;
+    background-color: #F1D796;
 }
 
 #color-3 {
-    background-color: #dbb8ff;
+    background-color: #ED9E9F;
 }
 
 #color-4 {
-    background-color: #676767;
+    background-color: white;
 }
 
 #color-5 {
-    background-color: #fffcb7;
+    background-color: white;
 }
 
 #color-6 {
-    background-color: #0b903f;
+    background-color: white;
 }
 
 #color-7 {
-    background-color: #d86289;
+    background-color: white;
 }
 
 #color-8 {
-    background-color: #ffc51a;
+    background-color: #A2654D;
 }
 
 #color-9 {
-    background-color: #c0ff00;
+    background-color: #DA5B48;
 }
 
 #color-10 {
-    background-color: #ff794d;
+    background-color: #5C695F;
 }
 
 #color-11 {
-    background-color: #ff4d4d;
+    background-color: #083431;
 }
 
 #color-12 {
-    background-color: #ffff00;
+    background-color: #453D3A;
 }
 
 #color-13 {
-    background-color: #4da6ff;
+    background-color: #887A88;
 }
 
 #color-14 {
-    background-color: #008080;
+    background-color: #A1A1AC;
 }
 
 #color-15 {
-    background-color: #cb4154;
+    background-color: #ABABAB;
 }
 
 #color-16 {
-    background-color: #b37700;
+    background-color: #797979;
 }
 
 #color-17 {
-    background-color: #99cccc;
+    background-color: #3C2D69;
 }
 
 #color-18 {
-    background-color: #915c83;
+    background-color: #4B564D;
 }
 
 #color-19 {
-    background-color: #8db600;
+    background-color: white;
 }
