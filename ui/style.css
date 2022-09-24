@@ -38,7 +38,7 @@ button {
 
 button:hover {
     border: 1px solid black;
-    opacity: 0.5;
+    filter: brightness(1.2);
 }
 
 #reset {
@@ -72,65 +72,65 @@ button:hover {
 }
 
 #color-4 {
-    background-color: white;
+    background-color: #B1B2FF;
 }
 
 #color-5 {
-    background-color: white;
+    background-color: #4E944F;
 }
 
 #color-6 {
-    background-color: white;
+    background-color: #ffdc34;
 }
 
 #color-7 {
-    background-color: white;
+    background-color: #A084CA;
 }
 
 #color-8 {
-    background-color: #A2654D;
+    background-color: #71a5de;
 }
 
 #color-9 {
-    background-color: #DA5B48;
+    background-color: #3acbc7;
 }
 
 #color-10 {
-    background-color: #5C695F;
+    background-color: #F76E11;
 }
 
 #color-11 {
-    background-color: #083431;
+    background-color: #A2654D;
 }
 
 #color-12 {
-    background-color: #453D3A;
+    background-color: #CDF0EA;
 }
 
 #color-13 {
-    background-color: #887A88;
+    background-color: #DA5B48;
 }
 
 #color-14 {
-    background-color: #A1A1AC;
+    background-color: #5C695F;
 }
 
 #color-15 {
-    background-color: #ABABAB;
+    background-color: #083431;
 }
 
 #color-16 {
-    background-color: #797979;
+    background-color: #453D3A;
 }
 
 #color-17 {
-    background-color: #3C2D69;
+    background-color: #887A88;
 }
 
 #color-18 {
-    background-color: #4B564D;
+    background-color: #A1A1AC;
 }
 
 #color-19 {
-    background-color: white;
+    background-color: #ABABAB;
 }

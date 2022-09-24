@@ -25,99 +25,99 @@ const COLORS = [
   },
   {
     id: 'color-4',
-    primary: 'white',
-    secondary: 'white',
-    tertiary: 'white'
+    primary: '#B1B2FF',
+    secondary: '#AAC4FF',
+    tertiary: '#D2DAFF'
   },
   {
     id: 'color-5',
-    primary: 'white',
-    secondary: 'white',
-    tertiary: 'white'
+    primary: '#4E944F',
+    secondary: '#83BD75',
+    tertiary: '#B4E197'
   },
   {
     id: 'color-6',
-    primary: 'white',
-    secondary: 'white',
-    tertiary: 'white'
+    primary: '#ffdc34',
+    secondary: '#ffe568',
+    tertiary: '#fff3b7'
   },
   {
     id: 'color-7',
-    primary: 'white',
-    secondary: 'white',
-    tertiary: 'white'
+    primary: '#A084CA',
+    secondary: '#BFACE0',
+    tertiary: '#EBC7E8'
   },
   {
     id: 'color-8',
+    primary: '#71a5de',
+    secondary: '#aecbeb',
+    tertiary: '#e1ecf7'
+  },
+  {
+    id: 'color-9',
+    primary: '#3acbc7',
+    secondary: '#99ecea',
+    tertiary: '#c9fcfb'
+  },
+  {
+    id: 'color-10',
+    primary: '#F76E11',
+    secondary: '#FF9F45',
+    tertiary: '#FFBC80'
+  },
+  {
+    id: 'color-11',
     primary: '#A2654D',
     secondary: '#E7D3CB',
     tertiary: '#FBF5E9'
   },
   {
-    id: 'color-9',
+    id: 'color-12',
+    primary: '#CDF0EA',
+    secondary: '#ECC5FB',
+    tertiary: '#F9F9F9'
+  },
+  {
+    id: 'color-13',
     primary: '#DA5B48',
     secondary: '#EDDAA7',
     tertiary: '#F8F0DB'
   },
   {
-    id: 'color-10',
+    id: 'color-14',
     primary: '#5C695F',
     secondary: '#D8C7B7',
     tertiary: '#FBF5E9'
   },
   {
-    id: 'color-11',
+    id: 'color-15',
     primary: '#083431',
     secondary: '#C9C7C0',
     tertiary: '#FBF5E9'
   },
   {
-    id: 'color-12',
+    id: 'color-16',
     primary: '#453D3A',
     secondary: '#9A9590',
     tertiary: '#D1CCC8'
   },
   {
-    id: 'color-13',
+    id: 'color-17',
     primary: '#887A88',
     secondary: '#A9A6A9',
     tertiary: '#DCDCDC'
   },
   {
-    id: 'color-14',
+    id: 'color-18',
     primary: '#A1A1AC',
     secondary: '#C2C2CD',
     tertiary: '#DFDFEB'
   },
   {
-    id: 'color-15',
+    id: 'color-19',
     primary: '#ABABAB',
     secondary: '#C4C4C4',
     tertiary: '#EAEAEA'
-  },
-  {
-    id: 'color-16',
-    primary: '#797979',
-    secondary: '#4E4E4E',
-    tertiary: '#393939'
-  },
-  {
-    id: 'color-17',
-    primary: '#3C2D69',
-    secondary: '#273455',
-    tertiary: '#1A2038'
-  },
-  {
-    id: 'color-18',
-    primary: '#4B564D',
-    secondary: '#33403B',
-    tertiary: '#1B2122'
-  },
-  {
-    id: 'color-19',
-    primary: 'white',
-    secondary: 'white',
-    tertiary: 'white'
   },
 ];
 
